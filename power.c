@@ -1,7 +1,7 @@
 int ft_iterative_power(int nb , int power){
-int i = 2;
+int i = 0;
 int  r = nb ;
-while (i <= power){
+while (i + 2 <= power){
 nb = nb * r;
 i++;
 }
