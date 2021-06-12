@@ -1,17 +1,18 @@
 int ft_atoi(char *str){
-        int i = 0 ;
-        int nbr = 1;
-        int result = 0;
+        int i = 0 , nbr = 1 , result = 0;
 while(str){
         if (str[i] >= 'a' || str[i] >= 'A' ){
         ft_putnbr(0);
-        break;}
+        break;
+        }
       if (str[0] == '-' && str[1] >= 'a' ||  str[1] >= 'A' ){
 ft_putnbr(0);
-break;}
+break;
+      }
       if (str[i] == '-'){
  ft_putchar('-');
-i++;}
+i++;
+      }
     if (str[0] == '0'){
         i = 1;
                 }
@@ -20,10 +21,15 @@ i++;}
     }
 while(str[i] != '\0'){
 if (str[i] >= 'a' || str[i] >= 'A'){
-break;}
+break;
+}
         else {
 ft_putnbr( 0 + str[i] - '0');
-i++;}}
-break;}
-return 0;}
+i++;
+        }
+}
+break;
+}        
+return 0;
+}
 
