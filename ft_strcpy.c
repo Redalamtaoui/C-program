@@ -1,5 +1,2 @@
-char *ft_strcpy(char *dest , char *src){
-        src = dest;
-
-return (src);
-}
+char *ft_strcpy(char *dest , char *src){src = dest;
+return (src);}
